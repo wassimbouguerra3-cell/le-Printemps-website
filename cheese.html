@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأجبان الأوروبية - Le Printemps Superette</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+                <text x="50%" y="50" text-anchor="middle" fill="white" font-size="48" font-weight="bold" font-family="Arial">
+                    le Printemps
+                </text>
+                <text x="50%" y="90" text-anchor="middle" fill="white" font-size="18" font-family="Arial">
+                    <tspan font-size="14">superette</tspan>
+                </text>
+            </svg>
+        </div>
+        <p class="tagline">La qualité avant tout!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="imported.html">منتجات مستوردة</a></li>
+            <li><a href="cheese.html" class="active">الأجبان الأوروبية</a></li>
+            <li><a href="bakery.html">المخبوزات الفاخرة</a></li>
+            <li><a href="organic.html">منتجات عضوية</a></li>
+            <li><a href="new.html">جديدنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <section id="cheese" class="page-section active">
+            <div class="products-header">
+                <h2>🧀 الأجبان الأوروبية</h2>
+            </div>
+            <div class="products-grid" id="cheese-products">
+                <!-- Frico Cheese -->
+                <div class="product-card" onclick="showProductDetail('frico')">
+                    <div class="product-image-container">
+                        <svg width="200" height="220" viewBox="0 0 200 220">
+                            <rect x="30" y="40" width="140" height="150" rx="10" fill="#FFF8DC" stroke="#DAA520" stroke-width="3"/>
+                            <text x="100" y="70" text-anchor="middle" font-size="20" font-weight="bold" fill="#B8860B">FRICO</text>
+                            <text x="100" y="95" text-anchor="middle" font-size="14" fill="#B8860B">Gouda Cheese</text>
+                            <circle cx="70" cy="130" r="12" fill="#FFD700" opacity="0.6"/>
+                            <circle cx="100" cy="145" r="15" fill="#FFD700" opacity="0.6"/>
+                            <circle cx="130" cy="135" r="10" fill="#FFD700" opacity="0.6"/>
+                            <rect x="40" y="165" width="120" height="15" rx="3" fill="#CD853F"/>
+                            <text x="100" y="177" text-anchor="middle" font-size="10" fill="white">HOLLAND</text>
+                        </svg>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">جبن فريكو جودا</div>
+                        <div class="product-origin">🇳🇱 هولندا</div>
+                        <div class="product-price">850 دج</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

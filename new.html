@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جديدنا - Le Printemps Superette</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <svg viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+                <text x="50%" y="50" text-anchor="middle" fill="white" font-size="48" font-weight="bold" font-family="Arial">
+                    le Printemps
+                </text>
+                <text x="50%" y="90" text-anchor="middle" fill="white" font-size="18" font-family="Arial">
+                    <tspan font-size="14">superette</tspan>
+                </text>
+            </svg>
+        </div>
+        <p class="tagline">La qualité avant tout!</p>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="imported.html">منتجات مستوردة</a></li>
+            <li><a href="cheese.html">الأجبان الأوروبية</a></li>
+            <li><a href="bakery.html">المخبوزات الفاخرة</a></li>
+            <li><a href="organic.html">منتجات عضوية</a></li>
+            <li><a href="new.html" class="active">جديدنا</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="new" class="page-section active">
+            <div class="products-header">
+                <h2>✨ جديدنا</h2>
+            </div>
+            <div class="products-grid" id="new-products">
+                <!-- Italian Pasta -->
+                <div class="product-card" onclick="showProductDetail('pasta')">
+                    <div class="product-image-container">
+                        <svg width="180" height="240" viewBox="0 0 180 240">
+                            <rect x="50" y="60" width="80" height="140" rx="8" fill="#F0E68C" stroke="#DAA520" stroke-width="2"/>
+                            <text x="90" y="90" text-anchor="middle" font-size="16" font-weight="bold" fill="#8B4513">Barilla</text>
+                            <path d="M 70 110 Q 75 115, 80 110 Q 85 105, 90 110 Q 95 115, 100 110 Q 105 105, 110 110" stroke="#CD853F" stroke-width="3" fill="none"/>
+                            <path d="M 70 130 Q 75 135, 80 130 Q 85 125, 90 130 Q 95 135, 100 130 Q 105 125, 110 130" stroke="#CD853F" stroke-width="3" fill="none"/>
+                            <path d="M 70 150 Q 75 155, 80 150 Q 85 145, 90 150 Q 95 155, 100 150 Q 105 145, 110 150" stroke="#CD853F" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">معكرونة باريلا إيطالية</div>
+                        <div class="product-origin">🇮🇹 إيطاليا</div>
+                        <div class="product-price">450 دج</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
